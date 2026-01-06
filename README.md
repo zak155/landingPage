@@ -78,6 +78,8 @@ Start the development server:
 
 npm run dev
 
+Disable page Scrolling
+  ** npm install  scoll-lock
 
 Open in browser:
 
