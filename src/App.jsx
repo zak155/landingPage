@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 
 import Header from "./components/Header"
 import Benefits from "./components/Benefits"
+import Collaboration from "./components/Collaboration"
 const App=()=> {
  
 
@@ -17,6 +18,7 @@ const App=()=> {
       
       <Hero/>
       <Benefits/>
+      <Collaboration/>
     </div>
     
     <ButtonGradient/>
