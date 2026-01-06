@@ -40,20 +40,19 @@ const Hero = () => {
         Get Started
        </Button>
           </div>
-          <div className="relative max-w-[23rem] 
-          mx-auto md:max-w-5xl xl:mb-24">
+          <div className="relative max-w-[18rem] mx-auto md:max-w-[32rem] xl:mb-24">
             <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
               <div className="relative bg-n-8 rounded-[1rem]">
                 <div className="h-[1.4rem] bg-n-10 
                 rounded-t-[0.9rem] "/>
                
-                   <div className="aspect-[33/40] rounded-b-[0.9rem] 
+                   <div className="rounded-b-[0.9rem] 
                    overflow-hidden md:aspect-[688/490]">
                      <img
                        src={farmer}
-                       className="w-full"
-                       width={1440}
-                       height={1800}
+                       className="w-full h-auto block"
+                       width={1200}
+                       height={1100}
                      />
                    </div>
 
