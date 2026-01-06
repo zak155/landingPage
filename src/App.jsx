@@ -7,6 +7,7 @@ import Benefits from "./components/Benefits"
 import Collaboration from "./components/Collaboration"
 import Pricing from "./components/Pricing"
 import Roadmap from "./components/Roadmap"
+import Footer from "./components/Footer"
 const App=()=> {
  
 
@@ -23,6 +24,7 @@ const App=()=> {
       <Collaboration/>
       <Pricing/>
       <Roadmap/>
+      <Footer/>
     </div>
     
     <ButtonGradient/>
