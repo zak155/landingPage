@@ -1,36 +1,27 @@
-import ButtonGradient from "./assets/svg/ButtonGradient"
+import { Routes, Route } from "react-router-dom";
+import ButtonGradient from "./assets/svg/ButtonGradient";
 
-import Hero from "./components/Hero"
+// Pages
+import LandingPage from "./pages/LandingPage";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Dashboard from "./pages/Dashboard";
 
-import Header from "./components/Header"
-import Benefits from "./components/Benefits"
-import Collaboration from "./components/Collaboration"
-import Pricing from "./components/Pricing"
-import Roadmap from "./components/Roadmap"
-import Footer from "./components/Footer"
-const App=()=> {
- 
-
+const App = () => {
   return (
     <>
-    <h1 className='text-3xl font-bold underline'>
-      Hello World
-    </h1>
-    <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-      <Header/>
-      
-      <Hero/>
-      <Benefits/>
-      <Collaboration/>
-      <Pricing/>
-      <Roadmap/>
-      <Footer/>
-    </div>
-    
-    <ButtonGradient/>
-     </>
-  )
- 
-}
+      {/* Routes only, no <Router> here */}
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
 
-export default App
+      {/* Global floating component */}
+      <ButtonGradient />
+    </>
+  );
+};
+
+export default App;
