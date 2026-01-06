@@ -1,13 +1,14 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M2328 3533 l-3 -68 -72 -3 -73 -3 0 -79 0 -79 73 -3 72 -3 3 -67 3
+// src/components/Logo.jsx
+const Logo = ({ className }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 500 500"
+      preserveAspectRatio="xMidYMid meet"
+      className={`w-36 h-12 ${className}`} // adjust size
+    >
+      <g transform="translate(0,500) scale(0.1,-0.1)" fill="currentColor">
+       <path d="M2328 3533 l-3 -68 -72 -3 -73 -3 0 -79 0 -79 73 -3 72 -3 3 -67 3
 -68 79 0 79 0 3 68 3 67 73 3 72 3 0 79 0 80 -75 0 -75 0 0 70 0 70 -80 0 -79
 0 -3 -67z"/>
 <path d="M1288 3298 c-18 -37 -29 -87 -29 -133 0 -20 10 -38 29 -55 30 -26 72
@@ -124,5 +125,10 @@ c-32 -93 -59 -172 -59 -175 -2 -13 -23 37 -49 117 -16 48 -41 119 -55 158 -14
 <path d="M3456 1378 c3 -5 10 -6 15 -3 13 9 11 12 -6 12 -8 0 -12 -4 -9 -9z"/>
 <path d="M2443 1278 c1 -10 2 -18 4 -18 1 0 7 8 12 18 7 14 6 19 -4 19 -7 0
 -13 -9 -12 -19z"/>
-</g>
-</svg>
+        
+      </g>
+    </svg>
+  );
+};
+
+export default Logo;
