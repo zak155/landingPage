@@ -25,7 +25,7 @@ const Signup = () => {
     localStorage.setItem("userName", name);
     localStorage.setItem("userEmail", email);
 
-    navigate("/dashboard");
+    navigate("/login");
   };
 
   return (
